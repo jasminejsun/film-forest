@@ -11,6 +11,7 @@
         android:layout_width="160dp"
         android:layout_height="161dp"
         android:layout_marginTop="50dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:fontFamily="@font/roboto_bold"
         android:gravity="center|top"
         android:text="@string/menu_header_text"
@@ -29,25 +31,30 @@
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:background="#B14646"
         android:text="@string/start_search_button"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#2B2B2B"
-        tools:layout_editor_absoluteY="484dp" />
+        app:strokeColor="#2B2B2B" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="268dp"
         android:layout_height="240dp"
         android:layout_marginTop="-15dp"
+        android:contentDescription="@string/friends_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/undraw_horror_movie_3988" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
