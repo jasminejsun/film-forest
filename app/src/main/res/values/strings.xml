@@ -2,4 +2,7 @@
     <string name="app_name">film-forest</string>
     <string name="menu_header_text">Need a movie?</string>
     <string name="start_search_button">Start search</string>
+    <string name="search_by">Search by</string>
+    <string name="genre">Genre</string>
+    <string name="required">Required</string>
 </resources>
