@@ -11,21 +11,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:layout_marginLeft="77dp"
-        android:text="Search By"
-        android:textSize="27sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Search By"
+        android:textAppearance="@style/search_by"/>
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="119dp"
         android:layout_marginLeft="27dp"
         android:text="Genre"
-        android:textSize="27sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/genre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
