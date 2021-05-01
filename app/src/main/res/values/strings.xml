@@ -2,6 +2,7 @@
     <string name="app_name">film-forest</string>
     <string name="menu_header_text">Need a movie?</string>
     <string name="start_search_button">Start search</string>
+    <string name="surprise_button">Surprise me</string>
     <string name="friends_picture">Friends watching a movie</string>
     <string name="logo">Logo</string>
 </resources>
