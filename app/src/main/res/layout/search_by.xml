@@ -61,6 +61,7 @@
                 android:textAppearance="@style/required_text" />
         </LinearLayout>
     <RadioGroup
+        android:id="@+id/radioGenre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
@@ -71,7 +72,8 @@
             android:layout_marginTop="15dp"
             android:text="@string/action"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonAdventure"
@@ -80,7 +82,8 @@
             android:layout_marginLeft="40dp"
             android:text="@string/adventure"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonAnimation"
@@ -89,7 +92,8 @@
             android:layout_marginLeft="40dp"
             android:text="@string/animation"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonComedy"
@@ -98,7 +102,8 @@
             android:layout_marginStart="40dp"
             android:text="@string/comedy"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonDocumentary"
@@ -107,7 +112,8 @@
             android:layout_marginLeft="40dp"
             android:text="@string/documentary"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonDrama"
@@ -116,7 +122,8 @@
             android:layout_marginStart="40dp"
             android:text="@string/drama"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonFamily"
@@ -125,7 +132,8 @@
             android:layout_marginLeft="40dp"
             android:text="@string/family"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonHorror"
@@ -136,7 +144,8 @@
             android:buttonTint="@color/dark_green"
             android:textAppearance="@style/body_text"
             app:layout_constraintStart_toEndOf="@+id/radioButtonFamily"
-            app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama" />
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonRomance"
@@ -145,7 +154,8 @@
             android:layout_marginStart="40dp"
             android:text="@string/romance"
             android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text" />
+            android:textAppearance="@style/body_text"
+            android:onClick="radio_button_click"/>
 
         <RadioButton
             android:id="@+id/radioButtonScienceFiction"
@@ -156,7 +166,8 @@
             android:buttonTint="@color/dark_green"
             android:textAppearance="@style/body_text"
             app:layout_constraintStart_toEndOf="@+id/radioButtonRomance"
-            app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror" />
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror"
+            android:onClick="radio_button_click"/>
     </RadioGroup>
 
         <LinearLayout
@@ -252,7 +263,7 @@
         app:spinner_popup_elevation="14dp" />
 
         <Button
-            android:id="@+id/main_screen_button2"
+            android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
