@@ -24,6 +24,7 @@
                 android:layout_marginTop="43dp"
                 android:background="@null"
                 android:backgroundTint="@color/white"
+                android:contentDescription="@string/home_button"
                 android:scaleType="fitStart"
                 android:src="@drawable/home_button" />
 
