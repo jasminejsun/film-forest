@@ -10,18 +10,16 @@ import android.widget.*
 
 class MainActivity2 : AppCompatActivity() {
 
-    val backButton:ImageView = findViewById(R.id.back_arrow)
-    val radio_group:RadioGroup = findViewById(R.id.radioGenre)
-    val button: Button = findViewById(R.id.submit_button)
+    lateinit var radio_group: RadioGroup
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.search_by)
 
-        backButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent);
-        }
+        val backButton:ImageView = findViewById(R.id.back_arrow)
+        val button: Button = findViewById(R.id.submit_button)
+        radio_group = findViewById(R.id.radioGenre)
+
         //Radio button on click change
         radio_group.setOnCheckedChangeListener(
                 RadioGroup.OnCheckedChangeListener{
@@ -46,6 +44,11 @@ class MainActivity2 : AppCompatActivity() {
                         Toast.LENGTH_SHORT).show()
             }
         }
+
+        backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent);
+        }
     }
     // Get the selected radio button text using radio button on click listener
     fun radio_button_click(view: View){
@@ -54,4 +57,5 @@ class MainActivity2 : AppCompatActivity() {
         Toast.makeText(applicationContext,"On click : ${radio.text}",
                 Toast.LENGTH_SHORT).show()
     }
+
 }
