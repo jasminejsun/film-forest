@@ -45,27 +45,11 @@
             app:srcCompat="@drawable/undraw_horror_movie_3988" />
 
         <Button
-            android:id="@+id/main_screen_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="14dp"
-            android:backgroundTint="@color/dark_green"
-            android:fontFamily="@font/roboto_medium"
-            android:paddingLeft="17dp"
-            android:paddingTop="10dp"
-            android:paddingRight="17dp"
-            android:paddingBottom="10dp"
-            android:text="@string/surprise_button"
-            android:textAppearance="@style/button_text"
-            app:cornerRadius="30dp" />
-
-        <Button
             android:id="@+id/main_screen_button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="0dp"
             android:backgroundTint="@color/dark_green"
             android:fontFamily="@font/roboto_medium"
             android:paddingLeft="17dp"
@@ -73,6 +57,23 @@
             android:paddingRight="17dp"
             android:paddingBottom="10dp"
             android:text="@string/start_search_button"
+            android:textAppearance="@style/button_text"
+            app:cornerRadius="30dp" />
+
+        <Button
+            android:id="@+id/main_screen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/dark_green"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="17dp"
+            android:paddingTop="10dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="10dp"
+            android:text="@string/surprise_button"
             android:textAppearance="@style/button_text"
             app:cornerRadius="30dp" />
 
