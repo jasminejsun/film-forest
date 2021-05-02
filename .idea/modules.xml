@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.film-forest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.film-forest.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Source2.film-forest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Source2.film-forest.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/film-forest.iml" filepath="$PROJECT_DIR$/.idea/film-forest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/film-forest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/film-forest.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/jasmi.Source2.film-forest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/jasmi.Source2.film-forest.app.iml" />
     </modules>
   </component>
 </project>
