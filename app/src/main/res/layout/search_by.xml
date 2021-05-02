@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,12 +18,12 @@
 
     <TextView
         android:id="@+id/tv_search_by"
-        android:text="@string/search_by"
-        android:textAppearance="@style/header_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
         android:layout_marginLeft="77dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/search_by"
+        android:textAppearance="@style/header_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -52,135 +51,167 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/radioButtonAction"
+    <RadioGroup
+        android:id="@+id/radioGenre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/action"
-        android:buttonTint="@color/dark_green"
-        android:textAppearance="@style/body_text"
+        android:layout_marginTop="134dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_genre" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <RadioButton
-        android:id="@+id/radioButtonAdventure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="219dp"
-        android:buttonTint="@color/dark_green"
-        android:text="@string/adventure"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_genre" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/radioButtonAnimation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:text="@string/animation"
-        android:buttonTint="@color/dark_green"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonAction" />
+            <RadioButton
+                android:id="@+id/radioButtonAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:layout_marginLeft="40dp"
+                android:text="@string/action"
+                android:textAppearance="@style/body_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="8dp"
+                android:gravity="center" />
 
-    <RadioButton
-        android:id="@+id/radioButtonComedy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="219dp"
-        android:buttonTint="@color/dark_green"
-        android:text="@string/comedy"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonAdventure" />
+            <RadioButton
+                android:id="@+id/radioButtonAdventure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/adventure"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="92dp"
+                android:layout_toRightOf="@id/radioButtonAction"
+                android:gravity="center" />
 
-    <RadioButton
-        android:id="@+id/radioButtonDocumentary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:text="@string/documentary"
-        android:buttonTint="@color/dark_green"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonAnimation" />
+            <RadioButton
+                android:id="@+id/radioButtonAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/animation"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/radioButtonAction"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical" />
 
-    <RadioButton
-        android:id="@+id/radioButtonDrama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="219dp"
-        android:buttonTint="@color/dark_green"
-        android:text="@string/drama"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonComedy" />
+            <RadioButton
+                android:id="@+id/radioButtonComedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/comedy"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="92dp"
+                android:layout_toRightOf="@id/radioButtonAction"
+                android:layout_below="@id/radioButtonAdventure"
+                android:gravity="center" />
 
-    <RadioButton
-        android:id="@+id/radioButtonFamily"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:text="@string/family"
-        android:buttonTint="@color/dark_green"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonDocumentary" />
+            <RadioButton
+                android:id="@+id/radioButtonDocumentary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/documentary"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/radioButtonAnimation"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical" />
 
-    <RadioButton
-        android:id="@+id/radioButtonHorror"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/dark_green"
-        android:text="@string/horror"
-        android:layout_marginLeft="219dp"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama" />
+            <RadioButton
+                android:id="@+id/radioButtonDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/drama"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="92dp"
+                android:layout_toRightOf="@id/radioButtonAction"
+                android:layout_below="@id/radioButtonAnimation"
+                android:gravity="center"/>
 
-    <RadioButton
-        android:id="@+id/radioButtonRomance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="@string/romance"
-        android:buttonTint="@color/dark_green"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonFamily" />
+            <RadioButton
+                android:id="@+id/radioButtonFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/family"
+                android:textAppearance="@style/body_text"
+                android:layout_below="@id/radioButtonDocumentary"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical" />
 
-    <RadioButton
-        android:id="@+id/radioButtonScienceFiction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/dark_green"
-        android:text="@string/science_fiction"
-        android:layout_marginLeft="219dp"
-        android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror" />
+            <RadioButton
+                android:id="@+id/radioButtonHorror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/horror"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="92dp"
+                android:layout_toRightOf="@id/radioButtonAction"
+                android:layout_below="@id/radioButtonDrama"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRomance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/romance"
+                android:textAppearance="@style/body_text"
+                android:layout_below="@id/radioButtonFamily"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonScienceFiction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_green"
+                android:text="@string/science_fiction"
+                android:textAppearance="@style/body_text"
+                android:layout_marginLeft="92dp"
+                android:layout_toRightOf="@id/radioButtonAction"
+                android:layout_below="@id/radioButtonHorror"
+                android:gravity="center" />
+
+        </RelativeLayout>
+    </RadioGroup>
 
     <TextView
         android:id="@+id/tv_release_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="385dp"
         android:text="@string/release_year"
         android:textAppearance="@style/secondary_header_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonRomance" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="399dp"
         android:text="@string/optional"
         android:textAppearance="@style/optional_text"
-        android:layout_marginTop="414dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -188,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="454dp"
+        android:layout_marginTop="439dp"
         android:text="@string/select_release_year"
         android:textAppearance="@style/unselected_body_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -199,7 +230,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="504dp"
+        android:layout_marginTop="489dp"
         android:text="@string/runtime"
         android:textAppearance="@style/secondary_header_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -208,9 +239,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
         android:text="@string/optional"
         android:textAppearance="@style/optional_text"
-        android:layout_marginTop="515dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -219,7 +250,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="557dp"
+        android:layout_marginTop="542dp"
         android:text="@string/select_runtime"
         android:textAppearance="@style/unselected_body_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -229,7 +260,6 @@
         android:id="@+id/main_screen_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/dark_green"
         android:fontFamily="@font/roboto_medium"
         android:padding="10dp"
@@ -240,16 +270,17 @@
         android:text="@string/find_movie_button"
         android:textAppearance="@style/button_text"
         app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="580dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/list_arrow_1"
         android:layout_width="18dp"
         android:layout_height="13dp"
-        android:layout_marginTop="459dp"
+        android:layout_marginTop="444dp"
         android:layout_marginRight="51dp"
         android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -260,7 +291,7 @@
         android:id="@+id/list_arrow_2"
         android:layout_width="18dp"
         android:layout_height="13dp"
-        android:layout_marginTop="563dp"
+        android:layout_marginTop="548dp"
         android:layout_marginRight="51dp"
         android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
