@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/tv_search_by"
         android:text="@string/search_by"
         android:textAppearance="@style/header_text"
         android:layout_width="wrap_content"
@@ -18,19 +19,143 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:text="@string/genre"
-        android:textAppearance="@style/secondary_header_text"
+        android:id="@+id/tv_genre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="119dp"
         android:layout_marginLeft="27dp"
+        android:layout_marginTop="119dp"
+        android:text="@string/genre"
+        android:textAppearance="@style/secondary_header_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:text="@string/required"
         android:textAppearance="@style/required_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButtonAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/action"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genre" />
+
+    <RadioButton
+        android:id="@+id/radioButtonAdventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/adventure"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonAction"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genre" />
+
+    <RadioButton
+        android:id="@+id/radioButtonAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="@string/animation"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonAction" />
+
+    <RadioButton
+        android:id="@+id/radioButtonComedy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:text="@string/comedy"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonAnimation"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonAction" />
+
+    <RadioButton
+        android:id="@+id/radioButtonDocumentary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="@string/documentary"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonAnimation" />
+
+    <RadioButton
+        android:id="@+id/radioButtonDrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:text="@string/drama"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonDocumentary"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonComedy" />
+
+    <RadioButton
+        android:id="@+id/radioButtonFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="@string/family"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonDocumentary" />
+
+    <RadioButton
+        android:id="@+id/radioButtonHorror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/horror"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonFamily"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama" />
+
+    <RadioButton
+        android:id="@+id/radioButtonRomance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/romance"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonFamily" />
+
+    <RadioButton
+        android:id="@+id/radioButtonScienceFiction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:text="@string/science_fiction"
+        android:textAppearance="@style/body_text"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonRomance"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror" />
+
+    <TextView
+        android:id="@+id/tv_release_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/release_year"
+        android:textAppearance="@style/secondary_header_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonRomance" />
+
+    <TextView
+        android:text="@string/optional"
+        android:textAppearance="@style/optional_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
