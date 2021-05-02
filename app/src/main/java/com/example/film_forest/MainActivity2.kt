@@ -3,17 +3,17 @@ package com.example.film_forest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.menu_screen)
+        setContentView(R.layout.search_by)
 
-        val button: Button = findViewById(R.id.main_screen_button2)
+        val backButton:ImageView = findViewById(R.id.back_arrow)
 
-        button.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+        backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent);
         }
     }
