@@ -68,12 +68,12 @@
         android:id="@+id/radioButtonAdventure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="15dp"
-        android:text="@string/adventure"
+        android:layout_marginLeft="219dp"
         android:buttonTint="@color/dark_green"
+        android:text="@string/adventure"
         android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonAction"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_genre" />
 
     <RadioButton
@@ -91,12 +91,12 @@
         android:id="@+id/radioButtonComedy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:text="@string/comedy"
+        android:layout_marginLeft="219dp"
         android:buttonTint="@color/dark_green"
+        android:text="@string/comedy"
         android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonAnimation"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonAction" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonAdventure" />
 
     <RadioButton
         android:id="@+id/radioButtonDocumentary"
@@ -113,11 +113,11 @@
         android:id="@+id/radioButtonDrama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
-        android:text="@string/drama"
+        android:layout_marginLeft="219dp"
         android:buttonTint="@color/dark_green"
+        android:text="@string/drama"
         android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonDocumentary"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonComedy" />
 
     <RadioButton
@@ -135,11 +135,11 @@
         android:id="@+id/radioButtonHorror"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:text="@string/horror"
         android:buttonTint="@color/dark_green"
+        android:text="@string/horror"
+        android:layout_marginLeft="219dp"
         android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonFamily"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama" />
 
     <RadioButton
@@ -157,11 +157,11 @@
         android:id="@+id/radioButtonScienceFiction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:text="@string/science_fiction"
         android:buttonTint="@color/dark_green"
+        android:text="@string/science_fiction"
+        android:layout_marginLeft="219dp"
         android:textAppearance="@style/body_text"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonRomance"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror" />
 
     <TextView
