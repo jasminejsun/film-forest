@@ -14,6 +14,10 @@
 
     <style name="header_text">
 
+        <item name="android:fontFamily">
+            "@font/roboto_bold"
+        </item>
+
         <item name="android:textSize">
             27sp
         </item>
@@ -25,6 +29,10 @@
     </style>
 
     <style name="secondary_header_text">
+
+        <item name="android:fontFamily">
+            "@font/roboto_bold"
+        </item>
 
         <item name="android:textSize">
             27sp
@@ -38,6 +46,10 @@
 
     <style name="body_text">
 
+        <item name="android:fontFamily">
+            "@font/roboto_medium"
+        </item>
+
         <item name="android:textSize">
             16sp
         </item>
@@ -49,6 +61,10 @@
     </style>
 
     <style name="button_text">
+
+        <item name="android:fontFamily">
+            "@font/roboto_medium"
+        </item>
 
         <item name="android:textSize">
             27sp
@@ -62,6 +78,10 @@
 
     <style name="unselected_body_text">
 
+        <item name="android:fontFamily">
+            "@font/roboto_medium"
+        </item>
+
         <item name="android:textSize">
             16sp
         </item>
@@ -73,6 +93,10 @@
     </style>
 
     <style name="description_header_text">
+
+        <item name="android:fontFamily">
+            "@font/roboto_bold"
+        </item>
 
         <item name="android:textSize">
             20sp
@@ -86,6 +110,10 @@
 
     <style name="required_text">
 
+        <item name="android:fontFamily">
+            "@font/roboto"
+        </item>
+
         <item name="android:textSize">
             12sp
         </item>
@@ -97,6 +125,10 @@
     </style>
 
     <style name="optional_text">
+
+        <item name="android:fontFamily">
+            "@font/roboto"
+        </item>
 
         <item name="android:textSize">
             12sp
