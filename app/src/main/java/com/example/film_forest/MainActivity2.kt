@@ -210,8 +210,8 @@ class MainActivity2 : AppCompatActivity() {
         val findMovieButton: Button = findViewById(R.id.submit_button)
 
         findMovieButton.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
-            startActivity(intent);
+            val findMovie = Intent(this, MainActivity3::class.java)
+            startActivity(findMovie);
         }
     }
 
