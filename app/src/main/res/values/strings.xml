@@ -26,4 +26,8 @@
     <string name="horror">Horror</string>
     <string name="romance">Romance</string>
     <string name="science_fiction">Science Fiction</string>
+    <string name="genre_header_text">Genre(s)</string>
+    <string name="release_date_header_text">Release date</string>
+    <string name="runtime_header_text">Runtime</string>
+    <string name="rating_header_text">Average rating</string>
 </resources>

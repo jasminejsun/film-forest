@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageButton
                 android:id="@+id/back_arrow"
                 android:layout_width="25dp"
@@ -29,24 +30,25 @@
 
             <TextView
                 android:id="@+id/tv_search_by"
-                android:text="@string/search_by"
-                android:textAppearance="@style/header_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="38dp"/>
+                android:layout_marginTop="38dp"
+                android:text="@string/search_by"
+                android:textAppearance="@style/header_text" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/tv_genre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
                 android:text="@string/genre"
                 android:textAppearance="@style/secondary_header_text" />
 
@@ -60,120 +62,123 @@
                 android:text="@string/required"
                 android:textAppearance="@style/required_text" />
         </LinearLayout>
-    <RadioGroup
-        android:id="@+id/radioGenre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/radioButtonAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/action"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
 
-        <RadioButton
-            android:id="@+id/radioButtonAdventure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="@string/adventure"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+        <RadioGroup
+            android:id="@+id/radioGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/radioButtonAnimation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="@string/animation"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/action"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonComedy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/comedy"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonAdventure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/adventure"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonDocumentary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="@string/documentary"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/animation"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonDrama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/drama"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonComedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/comedy"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonFamily"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="@string/family"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonDocumentary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/documentary"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonHorror"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/horror"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            app:layout_constraintStart_toEndOf="@+id/radioButtonFamily"
-            app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/drama"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonRomance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/romance"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            android:onClick="radio_button_click"/>
+            <RadioButton
+                android:id="@+id/radioButtonFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/family"
+                android:textAppearance="@style/body_text" />
 
-        <RadioButton
-            android:id="@+id/radioButtonScienceFiction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/science_fiction"
-            android:buttonTint="@color/dark_green"
-            android:textAppearance="@style/body_text"
-            app:layout_constraintStart_toEndOf="@+id/radioButtonRomance"
-            app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror"
-            android:onClick="radio_button_click"/>
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radioButtonHorror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/horror"
+                android:textAppearance="@style/body_text"
+                app:layout_constraintStart_toEndOf="@+id/radioButtonFamily"
+                app:layout_constraintTop_toBottomOf="@+id/radioButtonDrama" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRomance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/romance"
+                android:textAppearance="@style/body_text" />
+
+            <RadioButton
+                android:id="@+id/radioButtonScienceFiction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:buttonTint="@color/dark_green"
+                android:onClick="radio_button_click"
+                android:text="@string/science_fiction"
+                android:textAppearance="@style/body_text"
+                app:layout_constraintStart_toEndOf="@+id/radioButtonRomance"
+                app:layout_constraintTop_toBottomOf="@+id/radioButtonHorror" />
+        </RadioGroup>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/tv_release_year"
                 android:layout_width="wrap_content"
@@ -192,75 +197,47 @@
                 android:textAppearance="@style/optional_text" />
         </LinearLayout>
 
-        <com.skydoves.powerspinner.PowerSpinnerView
-            android:id="@+id/powerSpinnerView"
+        <Spinner
+            android:id="@+id/release_year_spinner"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingStart="25dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="20dp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="33dp"
-            android:layout_marginEnd="33dp"
-            android:background="@color/white"
-            android:fontFamily="@font/roboto_medium"
-            android:gravity="left"
-            android:hint="@string/select_release_year"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/light_grey"
-            android:textSize="16sp"
-            app:spinner_arrow_gravity="end"
-            app:spinner_arrow_padding="8dp"
-            app:spinner_arrow_tint="@color/light_grey"
-            app:spinner_divider_color="@color/white"
-            app:spinner_divider_show="true"
-            app:spinner_divider_size="0.4dp"
-            app:spinner_item_array="@array/release_year"
-            app:spinner_popup_animation="dropdown"
-            app:spinner_popup_background="@color/white"
-            app:spinner_popup_elevation="14dp"/>
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/runtime_header"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/runtime_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:text="@string/runtime"
+                android:textAppearance="@style/secondary_header_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/optional"
+                android:textAppearance="@style/optional_text" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/runtime_spinner"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="27dp"
-            android:text="@string/runtime"
-            android:textAppearance="@style/secondary_header_text" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="170dp"
-            android:layout_marginTop="0dp"
-            android:text="@string/optional"
-            android:textAppearance="@style/optional_text" />
-    </LinearLayout>
-
-    <com.skydoves.powerspinner.PowerSpinnerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="33dp"
-        android:background="@color/white"
-        android:fontFamily="@font/roboto_medium"
-        android:gravity="left"
-        android:hint="@string/select_runtime"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/light_grey"
-        android:textSize="16sp"
-        app:spinner_arrow_gravity="end"
-        app:spinner_arrow_padding="8dp"
-        app:spinner_arrow_tint="@color/light_grey"
-        app:spinner_divider_color="@color/white"
-        app:spinner_divider_show="true"
-        app:spinner_divider_size="0.4dp"
-        app:spinner_item_array="@array/runtime"
-        app:spinner_popup_animation="dropdown"
-        app:spinner_popup_background="@color/white"
-        app:spinner_popup_elevation="14dp" />
+            android:layout_gravity="left"
+            android:paddingStart="25dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="20dp" />
 
         <Button
             android:id="@+id/submit_button"

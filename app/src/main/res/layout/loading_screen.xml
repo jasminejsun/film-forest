@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    android:background="@color/dark_green">
+    android:background="@color/dark_green"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logo_loading"

@@ -17,7 +17,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/home_button"
                 android:layout_width="25dp"
                 android:layout_height="28dp"
                 android:layout_marginStart="39dp"
@@ -29,14 +29,120 @@
                 android:src="@drawable/home_button" />
 
             <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="38dp"
-            android:text="@string/search_results"
-            android:textAppearance="@style/header_text" />
+                android:id="@+id/search_result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/search_results"
+                android:textAppearance="@style/header_text" />
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/header_text" />
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/body_text" />
+
+        <TextView
+            android:id="@+id/genre_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="5dp"
+            android:text="@string/genre_header_text"
+            android:textAppearance="@style/description_header_text" />
+
+        <TextView
+            android:id="@+id/genre_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/body_text" />
+
+        <TextView
+            android:id="@+id/release_date_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="5dp"
+            android:text="@string/release_date_header_text"
+            android:textAppearance="@style/description_header_text" />
+
+        <TextView
+            android:id="@+id/release_date_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/body_text" />
+
+        <TextView
+            android:id="@+id/runtime_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="5dp"
+            android:text="@string/runtime_header_text"
+            android:textAppearance="@style/description_header_text" />
+
+        <TextView
+            android:id="@+id/runtime_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/body_text" />
+
+        <TextView
+            android:id="@+id/rating_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="5dp"
+            android:text="@string/rating_header_text"
+            android:textAppearance="@style/description_header_text" />
+
+        <TextView
+            android:id="@+id/rating_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/body_text" />
     </LinearLayout>
 </ScrollView>
